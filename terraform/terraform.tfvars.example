@@ -1,0 +1,15 @@
+# Example variables. DO NOT commit real infrastructure credentials or IPs.
+proxmox_endpoint  = "https://192.168.1.100:8006/"
+proxmox_insecure  = true
+proxmox_node_name = "pve"
+template_vm_id    = 9000
+vm_username       = "devops"
+ssh_public_key    = "ssh-ed25519 AAAAC3NzaC1... user@domain"
+
+network_config = {
+  bridge  = "vmbr0"
+  vlan_id = 99
+  gateway = "192.168.1.1"
+  cidr    = 24
+  dns     = ["1.1.1.1", "8.8.8.8"]
+}
