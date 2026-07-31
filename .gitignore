@@ -12,3 +12,6 @@ crash.*.log
 # Ignore variables files containing real secrets
 *.tfvars
 !terraform.tfvars.example
+
+# inventory.ini
+inventory.ini
