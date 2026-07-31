@@ -1,14 +1,15 @@
 # Centralized data-driven definition of all cluster nodes including specific tags
 locals {
   servers = {
-    "bastion-node"  = { ip = "10.217.97.50", cores = 2, memory = 1024, disk = 20, tags = ["terraform", "homelab", "bastion"] }
-    "k8s-master-1"  = { ip = "10.217.97.61", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
-    "k8s-master-2"  = { ip = "10.217.97.62", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
-    "k8s-master-3"  = { ip = "10.217.97.63", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
-    "k8s-worker-1"  = { ip = "10.217.97.71", cores = 4, memory = 4096, disk = 50, tags = ["terraform", "homelab", "k3s"] }
-    "k8s-worker-2"  = { ip = "10.217.97.72", cores = 4, memory = 4096, disk = 50, tags = ["terraform", "homelab", "k3s"] }
-    "docker-single" = { ip = "10.217.97.81", cores = 2, memory = 4096, disk = 40, tags = ["terraform", "homelab", "docker"] }
-    "mail-server"   = { ip = "10.217.97.82", cores = 2, memory = 8192, disk = 60, tags = ["terraform", "homelab", "docker", "mailserver"] }
+    "devops-terminal" = { ip = "10.217.97.40", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "admin"] }
+    "bastion-node"    = { ip = "10.217.97.50", cores = 2, memory = 1024, disk = 20, tags = ["terraform", "homelab", "bastion"] }
+    "k8s-master-1"    = { ip = "10.217.97.61", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
+    "k8s-master-2"    = { ip = "10.217.97.62", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
+    "k8s-master-3"    = { ip = "10.217.97.63", cores = 2, memory = 2048, disk = 30, tags = ["terraform", "homelab", "k3s"] }
+    "k8s-worker-1"    = { ip = "10.217.97.71", cores = 4, memory = 4096, disk = 50, tags = ["terraform", "homelab", "k3s"] }
+    "k8s-worker-2"    = { ip = "10.217.97.72", cores = 4, memory = 4096, disk = 50, tags = ["terraform", "homelab", "k3s"] }
+    "docker-single"   = { ip = "10.217.97.81", cores = 2, memory = 4096, disk = 40, tags = ["terraform", "homelab", "docker"] }
+    "mail-server"     = { ip = "10.217.97.82", cores = 2, memory = 8192, disk = 60, tags = ["terraform", "homelab", "docker", "mailserver"] }
   }
 }
 
